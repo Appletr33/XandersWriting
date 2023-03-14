@@ -1,0 +1,2 @@
+const t=document.querySelectorAll("a");t.forEach((t=>{t.onmouseover=t=>{if(t.target.dataset.value){let e=0;const a=setInterval((()=>{t.target.innerText=t.target.innerText.split("").map(((a,r)=>r<e?t.target.dataset.value[r]:"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[Math.floor(26*Math.random())])).join(""),e>=t.target.dataset.value.length&&clearInterval(a),e+=1/3}),30)}}}));
+//# sourceMappingURL=index.911d8597.js.map
